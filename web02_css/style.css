@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+
+#header {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+}
+
+#menu {
+    border-right: 1px solid gray;
+    width: 130px;
+    margin: 0;
+    padding: 20px;
+}
+
+#article {
+    padding: 20px;
+}
+
+@media(max-width:800px){
+    #body {
+        display: block;
+    }
+    #menu {
+        border-right: none;
+    }
+    #header {
+        border-bottom: none;
+    }
+}
